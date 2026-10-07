@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ETF Masterclass: The One-Pager Blueprint</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.90);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- Floating Navigation Ribbon -->
+  <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2 font-bold text-lg text-slate-900 tracking-tight">
+        <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-extrabold shadow-sm">
+          <i data-lucide="layers" class="w-4 h-4"></i>
+        </span>
+        <span>ETF<span class="text-blue-600">Primer</span></span>
+        <span class="ml-2 px-2 py-0.5 text-[10px] font-semibold tracking-wide uppercase bg-slate-100 text-slate-600 rounded">Educational</span>
+      </div>
+      <div class="hidden md:flex items-center gap-6 text-xs font-semibold text-slate-600 uppercase tracking-wider">
+        <a href="#intro" class="hover:text-blue-600 transition">Evolution</a>
+        <a href="#timeline" class="hover:text-blue-600 transition">Chronicle</a>
+        <a href="#categories" class="hover:text-blue-600 transition">Taxonomy</a>
+        <a href="#global-india" class="hover:text-blue-600 transition">Ecosystem</a>
+        <a href="#investor-playbook" class="hover:text-blue-600 transition">Framework</a>
+      </div>
+      <a href="#interactive-simulator" class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-blue-600 text-white hover:bg-blue-700 shadow-sm transition">
+        Compounding Calc
+      </a>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-4 py-8 space-y-12">
+
+    <!-- HERO SECTION: The Evolution of Market Access -->
+    <section id="intro" class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white p-8 md:p-12 shadow-xl">
+      <div class="relative z-10 max-w-3xl space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-medium border border-blue-400/30">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+          The Evolution of Market Access
+        </div>
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight">
+          Exchange-Traded Funds: <br class="hidden sm:block"/>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-teal-300 to-cyan-400">
+            The Modern Investment Engine
+          </span>
+        </h1>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+          Historical investing demanded a trade-off: take individual company risk or settle for end-of-day mutual funds with higher operating costs. ETFs merged the diversified safety of index funds with the real-time liquidity and low overhead of exchange-listed shares.
+        </p>
+
+        <!-- Dynamic Stat Overview -->
+        <div class="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div class="p-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+            <span class="text-xs text-slate-400 block font-medium">Global ETF AUM</span>
+            <span class="text-xl md:text-2xl font-bold text-white">$24T+</span>
+          </div>
+          <div class="p-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+            <span class="text-xs text-slate-400 block font-medium">Typical TER / BER</span>
+            <span class="text-xl md:text-2xl font-bold text-teal-400">0.05% - 0.30%</span>
+          </div>
+          <div class="p-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+            <span class="text-xs text-slate-400 block font-medium">Settlement Cycle</span>
+            <span class="text-xl md:text-2xl font-bold text-blue-400">T+1 Live</span>
+          </div>
+          <div class="p-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+            <span class="text-xs text-slate-400 block font-medium">India Demat Accounts</span>
+            <span class="text-xl md:text-2xl font-bold text-indigo-400">230M+</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ETF Journey & Timeline -->
+    <section id="timeline" class="space-y-4">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-2">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Chronicle</span>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">The ETF Journey (1990 – Present)</h2>
+        </div>
+        <p class="text-xs text-slate-500 max-w-sm">From a single benchmark Canadian fund to a multi-trillion dollar decentralized revolution.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <div class="glass-card p-5 rounded-2xl border-t-4 border-t-blue-500 shadow-xs hover:shadow-md transition">
+          <div class="flex items-center justify-between text-xs text-blue-600 font-bold mb-2">
+            <span>March 1990</span>
+            <i data-lucide="compass" class="w-4 h-4"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Genesis: TIPS 35</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            The Toronto 35 Index Participation Units debuted on the Toronto Stock Exchange—the first true exchange-traded index basket.
+          </p>
+        </div>
+
+        <div class="glass-card p-5 rounded-2xl border-t-4 border-t-indigo-500 shadow-xs hover:shadow-md transition">
+          <div class="flex items-center justify-between text-xs text-indigo-600 font-bold mb-2">
+            <span>January 1993</span>
+            <i data-lucide="bar-chart-3" class="w-4 h-4"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">SPDR S&P 500 (SPY)</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            State Street launched SPY in the US. Today, it remains among the most heavily traded and liquid exchange-traded funds in the world.
+          </p>
+        </div>
+
+        <div class="glass-card p-5 rounded-2xl border-t-4 border-t-teal-500 shadow-xs hover:shadow-md transition">
+          <div class="flex items-center justify-between text-xs text-teal-600 font-bold mb-2">
+            <span>Dec 2001 / Jan 2002</span>
+            <i data-lucide="flag" class="w-4 h-4"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">India Enters: Nifty BeES</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Allotted in Dec 2001 and listed on NSE on Jan 8, 2002 by Benchmark Mutual Fund, introducing Indian retail to exchange-traded indexing.
+          </p>
+        </div>
+
+        <div class="glass-card p-5 rounded-2xl border-t-4 border-t-emerald-500 shadow-xs hover:shadow-md transition">
+          <div class="flex items-center justify-between text-xs text-emerald-600 font-bold mb-2">
+            <span>2015 & Beyond</span>
+            <i data-lucide="zap" class="w-4 h-4"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Institutional Scale & Debt</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            EPFO initiated ETF allocations in August 2015, paving the way for Bharat Bond target-maturity debt, factor indices, and precious metals.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: Major Categories of ETFs (Interactive Tabbed Infographic) -->
+    <section id="categories" class="glass-card p-6 md:p-8 rounded-3xl shadow-sm border border-slate-200">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Taxonomy</span>
+          <h2 class="text-2xl font-extrabold text-slate-900">Major Categories of ETFs</h2>
+        </div>
+        <!-- Filter Tabs -->
+        <div id="categoryTabs" class="inline-flex p-1 bg-slate-100 rounded-xl text-xs font-medium">
+          <button onclick="switchCategory('equity', this)" class="cat-btn px-3 py-1.5 rounded-lg font-semibold bg-white text-blue-600 shadow-xs transition">Equity</button>
+          <button onclick="switchCategory('debt', this)" class="cat-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-slate-900 transition">Debt / Fixed Income</button>
+          <button onclick="switchCategory('commodity', this)" class="cat-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-slate-900 transition">Commodities</button>
+          <button onclick="switchCategory('smart', this)" class="cat-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-slate-900 transition">Smart Beta</button>
+        </div>
+      </div>
+
+      <!-- Dynamic Content Card -->
+      <div id="categoryDisplay" class="bg-gradient-to-r from-slate-900 to-indigo-950 text-white rounded-2xl p-6 transition-all duration-300">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- SECTION 4: The Global Surge & Impact on Indian Economy -->
+    <section id="global-india" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      
+      <!-- Global Surge Card -->
+      <div class="glass-card p-6 md:p-8 rounded-3xl border border-slate-200 flex flex-col justify-between">
+        <div>
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold mb-3">
+            <i data-lucide="globe" class="w-3.5 h-3.5"></i> The Global Surge
+          </div>
+          <h3 class="text-xl font-extrabold text-slate-900 mb-2">Trillions Transitioning Toward Index Transparency</h3>
+          <p class="text-xs md:text-sm text-slate-600 leading-relaxed mb-4">
+            Long-term active performance studies (such as SPIVA) show that most large-cap active funds have lagged benchmark indices over multi-year horizons, accelerating institutional movement into disciplined, low-cost passive tracking.
+          </p>
+          <div class="space-y-2.5">
+            <div class="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs">
+              <span class="font-semibold text-slate-700">Cost Transparency</span>
+              <span class="text-blue-600 font-bold">Base Expense Ratio separation</span>
+            </div>
+            <div class="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs">
+              <span class="font-semibold text-slate-700">Digital Access</span>
+              <span class="text-indigo-600 font-bold">Exchange-traded Demat settlement</span>
+            </div>
+            <div class="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs">
+              <span class="font-semibold text-slate-700">Arbitrage Efficiency</span>
+              <span class="text-teal-600 font-bold">iNAV continuous quote matching</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Impact on Indian Economy Card -->
+      <div class="glass-card p-6 md:p-8 rounded-3xl border border-slate-200 flex flex-col justify-between">
+        <div>
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-xs font-bold mb-3">
+            <i data-lucide="trending-up" class="w-3.5 h-3.5"></i> Economic Impact on India
+          </div>
+          <h3 class="text-xl font-extrabold text-slate-900 mb-2">Deepening the Domestic Financial Fabric</h3>
+          <p class="text-xs md:text-sm text-slate-600 leading-relaxed mb-4">
+            ETFs are expanding India's capital formation, turning idle physical savings into institutional productive capacity across debt and equity markets.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+            <div class="p-3 rounded-xl bg-teal-50/60 border border-teal-100">
+              <span class="font-bold text-teal-900 block mb-1">Financialization of Gold</span>
+              <span class="text-slate-600">Replaces physical bullion storage friction with digital gold/silver paper backed by vaulted purity.</span>
+            </div>
+            <div class="p-3 rounded-xl bg-blue-50/60 border border-blue-100">
+              <span class="font-bold text-blue-900 block mb-1">Corporate Bond Depth</span>
+              <span class="text-slate-600">Bharat Bond ETFs established secondary trading liquidity for AAA PSUs and target-maturity bonds.</span>
+            </div>
+            <div class="p-3 rounded-xl bg-indigo-50/60 border border-indigo-100">
+              <span class="font-bold text-indigo-900 block mb-1">Institutional Stability</span>
+              <span class="text-slate-600">EPFO & NPS allocations channel substantial monthly domestic retirement funds into core indices.</span>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-100/70 border border-slate-200">
+              <span class="font-bold text-slate-900 block mb-1">Corporate Governance</span>
+              <span class="text-slate-600">Index weight criteria compel public firms to improve free-float liquidity and compliance standards.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SECTION 5: How Investors Benefit & Build Portfolio Growth -->
+    <section id="investor-playbook" class="glass-card p-6 md:p-8 rounded-3xl border border-slate-200 space-y-6">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Educational Model</span>
+        <h2 class="text-2xl font-extrabold text-slate-900 tracking-tight">The Core-and-Satellite Framework (Illustrative Model)</h2>
+        <p class="text-xs md:text-sm text-slate-500">An academic illustration of diversified multi-asset allocation. Not personalized investment advice.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+        <!-- Visual Ring -->
+        <div class="md:col-span-1 flex flex-col items-center justify-center p-6 bg-slate-900 rounded-2xl text-white text-center relative overflow-hidden">
+          <div class="w-36 h-36 rounded-full border-8 border-blue-500 flex flex-col items-center justify-center bg-slate-800 shadow-inner">
+            <span class="text-xs text-slate-400 font-semibold uppercase">Illustrative</span>
+            <span class="text-2xl font-black text-white">70-80%</span>
+            <span class="text-[10px] text-teal-400">Core Exposure</span>
+          </div>
+          <div class="mt-4 text-xs text-slate-300">
+            Surrounded by an illustrative <span class="text-amber-400 font-semibold">20-30% Satellite</span> strategic layer.
+          </div>
+        </div>
+
+        <!-- Strategy Details -->
+        <div class="md:col-span-2 space-y-3">
+          <div class="p-4 rounded-2xl border border-blue-100 bg-blue-50/50">
+            <h4 class="font-bold text-sm text-slate-900 mb-1">The 70-80% Core: Foundation Index Beta</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Standard models utilize broad market index vehicles (Nifty 50, BSE Sensex, S&P 500) paired with Target Maturity Debt ETFs. Captures long-term economic growth with low expense overhead.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl border border-amber-100 bg-amber-50/40">
+            <h4 class="font-bold text-sm text-slate-900 mb-1">The 20-30% Satellite: Tactical Allocation</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Investors often supplement core holdings with Factor-based ETFs (Momentum, Low Volatility) or precious metals (Gold/Silver) to address personal risk tolerance and inflationary hedges.
+            </p>
+          </div>
+
+          <div class="flex items-center gap-2 text-[11px] text-slate-500 bg-slate-100 p-2.5 rounded-xl">
+            <i data-lucide="info" class="w-4 h-4 text-blue-600 shrink-0"></i>
+            <span><strong>Execution Tip:</strong> Always place <em>Limit Orders</em> rather than Market Orders during trading hours, verifying current <em>iNAV</em> to minimize bid-ask spread slippage.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Compounding Simulator (Interactive Infographic - UNTOUCHED & SAFE) -->
+    <section id="interactive-simulator" class="bg-gradient-to-br from-indigo-900 to-slate-900 text-white p-6 md:p-8 rounded-3xl shadow-xl space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-teal-400">Interactive Visualizer</span>
+          <h2 class="text-2xl font-black">The Compounding Cost Drag Calculator</h2>
+        </div>
+        <span class="text-xs text-slate-400">Hypothetical model showing the compounding effect of fees</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+        <!-- Interactive Sliders -->
+        <div class="space-y-4 bg-white/5 p-4 rounded-2xl border border-white/10">
+          <div>
+            <div class="flex justify-between text-xs mb-1">
+              <span class="text-slate-300">Monthly SIP Amount</span>
+              <span id="sipValText" class="font-bold text-teal-300">₹10,000</span>
+            </div>
+            <input id="sipSlider" type="range" min="2000" max="50000" step="1000" value="10000" class="w-full accent-teal-400 cursor-pointer">
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs mb-1">
+              <span class="text-slate-300">Investment Horizon</span>
+              <span id="yearsValText" class="font-bold text-blue-300">25 Years</span>
+            </div>
+            <input id="yearsSlider" type="range" min="10" max="35" step="1" value="25" class="w-full accent-blue-400 cursor-pointer">
+          </div>
+
+          <div>
+            <div class="text-xs text-slate-300 mb-1">Expected Annual Return (Rate of Return %)</div>
+            <input id="rateInput" type="number" min="1" max="30" step="0.1" value="12" class="w-full px-3 py-2 rounded-lg bg-white/10 border border-white/20 text-white text-sm focus:outline-none focus:border-teal-400">
+          </div>
+
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <div class="text-xs text-slate-300 mb-1">ETF Fee (TER %)</div>
+              <input id="etfFeeInput" type="number" min="0" max="5" step="0.01" value="0.15" class="w-full px-3 py-2 rounded-lg bg-white/10 border border-white/20 text-white text-sm focus:outline-none focus:border-teal-400">
+            </div>
+            <div>
+              <div class="text-xs text-slate-300 mb-1">Active Fund Fee (TER %)</div>
+              <input id="activeFeeInput" type="number" min="0" max="5" step="0.01" value="1.80" class="w-full px-3 py-2 rounded-lg bg-white/10 border border-white/20 text-white text-sm focus:outline-none focus:border-teal-400">
+            </div>
+          </div>
+
+          <button id="calcBtn" type="button" class="w-full py-2.5 rounded-xl bg-teal-400 hover:bg-teal-300 active:scale-95 text-slate-900 font-bold text-sm transition">
+            Calculate
+          </button>
+
+          <div class="text-[11px] text-slate-400 border-t border-white/10 pt-2">
+            Result tabhi update hoga jab aap Calculate dabaoge.
+          </div>
+        </div>
+
+        <!-- Visual Comparison Output -->
+        <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="p-5 rounded-2xl bg-teal-500/10 border border-teal-500/30">
+            <span id="etfTitle" class="text-xs uppercase font-bold text-teal-300 block mb-1">Low-Cost ETF (0.15% TER)</span>
+            <span id="etfResult" class="text-2xl font-black text-white">₹ 1.83 Cr</span>
+            <p id="etfNote" class="text-xs text-slate-300 mt-2">Net return compounding at 11.85% annually.</p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-rose-500/10 border border-rose-500/30">
+            <span id="activeTitle" class="text-xs uppercase font-bold text-rose-300 block mb-1">Active Fund (1.80% TER)</span>
+            <span id="activeResult" class="text-2xl font-black text-slate-200">₹ 1.36 Cr</span>
+            <p class="text-xs text-rose-300 font-semibold mt-2" id="dragLostText">Fee Drag Lost: ~₹ 47.0 Lakhs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Specific Required Disclaimer beneath simulator -->
+      <div class="pt-4 border-t border-white/10">
+        <p class="text-[11px] text-slate-300 text-center leading-relaxed">
+          Disclaimer: For educational and illustrative purposes only. Not financial advice or a recommendation to buy or sell securities. Mutual Fund and ETF investments are subject to market risks; read all scheme-related documents carefully. Actual returns depend on market conditions, tracking error, brokerage, and taxes.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Clean Compliance Footer -->
+  <footer class="border-t border-slate-200 py-8 px-4 max-w-6xl mx-auto text-xs text-slate-500 space-y-3">
+    <p class="font-bold text-slate-700 uppercase tracking-wider text-[11px]">Regulatory Disclosure & Standard Risk Warnings</p>
+    <p class="leading-relaxed">
+      Disclaimer: For educational and illustrative purposes only. Not financial advice or a recommendation to buy or sell securities. Mutual Fund and ETF investments are subject to market risks; read all scheme-related documents carefully. Actual returns depend on market conditions, tracking error, brokerage, and taxes.
+    </p>
+    <p class="leading-relaxed text-[11px] text-slate-400">
+      Past performance does not guarantee future results. Investors should consult a SEBI-registered Investment Adviser (RIA) or qualified professional to determine asset suitability based on their individual financial situation.
+    </p>
+    <p class="text-[11px] text-slate-400 pt-2 border-t border-slate-200">
+      © 2026 ETF Knowledge Blueprint. Created for financial education & long-term investor literacy.
+    </p>
+  </footer>
+
+  <script>
+    // Initialize Lucide Icons
+    try { lucide.createIcons(); } catch (e) { console.warn('Lucide icons load nahi hue', e); }
+
+    // Categories Data Store (Updated & Compliant)
+    const categoriesData = {
+      equity: {
+        title: "Equity & Broad Index ETFs",
+        badge: "Market Benchmark Tracking",
+        desc: "Tracks standard market indices (Nifty 50, Nifty Next 50, S&P 500). Owns proportionate shares of India's and the world's leading corporations.",
+        features: ["Ultra-low expense ratio (<0.25%)", "No fund-manager discretionary bias", "Instant intraday liquidity on NSE/BSE"]
+      },
+      debt: {
+        title: "Debt & Target Maturity ETFs",
+        badge: "Predictable Yield & Safety",
+        desc: "Invests in Sovereign Government Securities (G-Secs), State Development Loans (SDLs), and AAA-rated Public Sector Bonds (e.g., Bharat Bond ETF).",
+        features: ["Locked-in indicative yields if held to maturity", "Institutional debt access with transparent disclosures", "Taxation governed under Section 50AA"]
+      },
+      commodity: {
+        title: "Commodity ETFs (Gold & Silver)",
+        badge: "Physical Precious Metals",
+        desc: "Represents electronic ownership of 99.5%+ pure physical gold or silver vaulted securely without theft, locker fees, or making charges.",
+        features: ["Trades in small denominations (fractional units)", "Eliminates physical purity verification hurdles", "Subject to underlying commodity price volatility"]
+      },
+      smart: {
+        title: "Smart Beta / Factor-Based ETFs",
+        badge: "Rule-Based Factor Strategies",
+        desc: "Bypasses traditional market-cap weighting to filter securities by quantitative factors: Momentum, Low Volatility, Quality, or High Dividend Yield.",
+        features: ["Systematic discipline without subjective emotion", "Factor-specific performance cyclicality", "Lower cost than active discretionary funds"]
+      }
+    };
+
+    function switchCategory(key, btnEl) {
+      const data = categoriesData[key];
+      const container = document.getElementById('categoryDisplay');
+      
+      // Update UI tabs
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        btn.classList.remove('bg-white', 'text-blue-600', 'font-semibold', 'shadow-xs');
+        btn.classList.add('text-slate-600');
+      });
+      if (btnEl) {
+        btnEl.classList.add('bg-white', 'text-blue-600', 'font-semibold', 'shadow-xs');
+        btnEl.classList.remove('text-slate-600');
+      }
+
+      // Update Card
+      container.innerHTML = `
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-3">
+          <h3 class="text-xl font-bold text-white tracking-tight">${data.title}</h3>
+          <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/20 text-blue-300 border border-blue-400/30 w-fit">${data.badge}</span>
+        </div>
+        <p class="text-slate-300 text-xs md:text-sm leading-relaxed mb-4">${data.desc}</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+          ${data.features.map(f => `
+            <div class="bg-white/10 p-2.5 rounded-xl border border-white/10 text-xs text-slate-200 flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-teal-400"></span>
+              <span>${f}</span>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    // Default category render
+    switchCategory('equity', document.querySelector('.cat-btn'));
+
+    // Compounding Calculator Logic (UNTOUCHED AND EXACT)
+    const sipSlider = document.getElementById('sipSlider');
+    const yearsSlider = document.getElementById('yearsSlider');
+    const sipValText = document.getElementById('sipValText');
+    const yearsValText = document.getElementById('yearsValText');
+    const etfResult = document.getElementById('etfResult');
+    const activeResult = document.getElementById('activeResult');
+    const dragLostText = document.getElementById('dragLostText');
+
+    const rateInput = document.getElementById('rateInput');
+    const etfFeeInput = document.getElementById('etfFeeInput');
+    const activeFeeInput = document.getElementById('activeFeeInput');
+    const etfTitle = document.getElementById('etfTitle');
+    const etfNote = document.getElementById('etfNote');
+    const activeTitle = document.getElementById('activeTitle');
+
+    function calculateSIP(monthly, annualRate, years) {
+      const months = years * 12;
+      const r = (annualRate / 100) / 12;
+      if (r === 0) return monthly * months;
+      return monthly * ((Math.pow(1 + r, months) - 1) / r) * (1 + r);
+    }
+
+    function formatToCroresOrLakhs(val) {
+      if (val >= 10000000) {
+        return `₹ ${(val / 10000000).toFixed(2)} Cr`;
+      }
+      return `₹ ${(val / 100000).toFixed(2)} Lakhs`;
+    }
+
+    // Sliders sirf labels update karte hain
+    function updateLabels() {
+      sipValText.innerText = `₹ ${parseFloat(sipSlider.value).toLocaleString('en-IN')}`;
+      yearsValText.innerText = `${parseInt(yearsSlider.value)} Years`;
+    }
+
+    // Calculation sirf Calculate button dabane par hoti hai
+    function updateSimulation() {
+      const monthly = parseFloat(sipSlider.value);
+      const years = parseInt(yearsSlider.value);
+      const grossReturn = parseFloat(rateInput.value);
+      const etfFee = parseFloat(etfFeeInput.value);
+      const activeFee = parseFloat(activeFeeInput.value);
+
+      if ([monthly, years, grossReturn, etfFee, activeFee].some(isNaN)) {
+        alert('Please sab fields me valid number daalo.');
+        return;
+      }
+
+      const etfNetRate = grossReturn - etfFee;
+      const activeNetRate = grossReturn - activeFee;
+
+      const etfFinal = calculateSIP(monthly, etfNetRate, years);
+      const activeFinal = calculateSIP(monthly, activeNetRate, years);
+      const dragLost = etfFinal - activeFinal;
+
+      etfResult.innerText = formatToCroresOrLakhs(etfFinal);
+      activeResult.innerText = formatToCroresOrLakhs(activeFinal);
+      dragLostText.innerText = `Fee Drag Lost: ~₹ ${formatToCroresOrLakhs(Math.abs(dragLost)).replace('₹ ', '')}`;
+      etfTitle.innerText = `Low-Cost ETF (${etfFee.toFixed(2)}% TER)`;
+      activeTitle.innerText = `Active Fund (${activeFee.toFixed(2)}% TER)`;
+      etfNote.innerText = `Net return compounding at ${etfNetRate.toFixed(2)}% annually.`;
+    }
+
+    sipSlider.addEventListener('input', updateLabels);
+    yearsSlider.addEventListener('input', updateLabels);
+    document.getElementById('calcBtn').addEventListener('click', updateSimulation);
+    updateLabels();
+    updateSimulation();
+  </script>
+</body>
+</html>
