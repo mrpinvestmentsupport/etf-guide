@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPO Masterclass: The Complete Public Listing Blueprint</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+    }
+    .custom-scroll::-webkit-scrollbar {
+      height: 6px;
+      width: 6px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background-color: #cbd5e1;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-600 selection:text-white">
+
+  <!-- Floating Navigation -->
+  <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2 font-bold text-lg text-slate-900 tracking-tight">
+        <span class="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-extrabold shadow-sm">
+          <i data-lucide="trending-up" class="w-4 h-4"></i>
+        </span>
+        <span>IPO<span class="text-indigo-600">Primer</span></span>
+        <span class="ml-2 px-2 py-0.5 text-[10px] font-semibold tracking-wide uppercase bg-slate-100 text-slate-600 rounded">Interactive Hub</span>
+      </div>
+      <div class="hidden lg:flex items-center gap-5 text-xs font-semibold text-slate-600 uppercase tracking-wider">
+        <a href="#what-is-ipo" class="hover:text-indigo-600 transition">Concept</a>
+        <a href="#lifecycle" class="hover:text-indigo-600 transition">Process</a>
+        <a href="#industries" class="hover:text-indigo-600 transition">Sectors</a>
+        <a href="#economic-impact" class="hover:text-indigo-600 transition">Economy</a>
+        <a href="#apply-guide" class="hover:text-indigo-600 transition">Apply (UPI)</a>
+        <a href="#tracker" class="hover:text-indigo-600 transition">NSE Tracker</a>
+        <a href="#caution-checklist" class="hover:text-indigo-600 transition">Caution Checklist</a>
+      </div>
+      <button onclick="requestAlertPermission()" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-indigo-600 text-white hover:bg-indigo-700 shadow-sm transition">
+        <i data-lucide="bell" class="w-3.5 h-3.5"></i>
+        <span>Get IPO Alerts</span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-4 py-8 space-y-12">
+
+    <!-- HERO SECTION: What is an IPO & Market Mechanism -->
+    <section id="what-is-ipo" class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 text-white p-8 md:p-12 shadow-xl">
+      <div class="relative z-10 max-w-3xl space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-medium border border-indigo-400/30">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+          Primary Market Mechanics
+        </div>
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight">
+          Initial Public Offering: <br class="hidden sm:block"/>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-sky-300 to-teal-300">
+            From Private Enterprise to Public Ownership
+          </span>
+        </h1>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+          An Initial Public Offering (IPO) is the institutional process by which a privately held corporation sells shares of its stock to the public for the first time, transitioning from unlisted private capital to publicly traded liquid securities on stock exchanges such as the NSE and BSE.
+        </p>
+
+        <!-- Fresh Issue vs OFS Infographic Cards -->
+        <div class="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+            <div class="flex items-center gap-2 text-indigo-400 font-bold text-sm mb-1">
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i> Fresh Issue of Shares
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              New equity units are minted. The capital raised flows directly onto the company's balance sheet to fund expansion, reduce corporate debt, or finance R&D.
+            </p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+            <div class="flex items-center gap-2 text-teal-400 font-bold text-sm mb-1">
+              <i data-lucide="refresh-cw" class="w-4 h-4"></i> Offer for Sale (OFS)
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Existing owners (promoters, venture capitalists, early private equity) sell part of their holding. The capital goes to existing shareholders, not to the company's treasury.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: The Step-by-Step IPO Journey -->
+    <section id="lifecycle" class="space-y-4">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-wider text-indigo-600">The Lifecycle</span>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">How an IPO Works in the Market</h2>
+        <p class="text-xs text-slate-500">From regulatory filing with SEBI to listing bell ring on the exchange floor.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="glass-card p-5 rounded-2xl border-t-4 border-t-indigo-500 shadow-xs">
+          <span class="text-[11px] font-bold text-indigo-600 uppercase">Phase 1</span>
+          <h3 class="font-bold text-slate-900 text-sm mt-1 mb-2">Merchant Bankers & DRHP</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            The firm hires lead managers/investment banks and files the Draft Red Herring Prospectus (DRHP) with SEBI for review and public comment.
+          </p>
+        </div>
+
+        <div class="glass-card p-5 rounded-2xl border-t-4 border-t-sky-500 shadow-xs">
+          <span class="text-[11px] font-bold text-sky-600 uppercase">Phase 2</span>
+          <h3 class="font-bold text-slate-900 text-sm mt-1 mb-2">RHP, Price Band & Roadshows</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Upon regulatory clearance, the Red Herring Prospectus (RHP) sets the floor price and cap price (price band), along with the minimum lot size for retail bidding.
+          </p>
+        </div>
+
+        <div class="glass-card p-5 rounded-2xl border-t-4 border-t-teal-500 shadow-xs">
+          <span class="text-[11px] font-bold text-teal-600 uppercase">Phase 3</span>
+          <h3 class="font-bold text-slate-900 text-sm mt-1 mb-2">3-Day Bidding & Book Building</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Bids open across QIB, NII (HNI), and Retail categories. Retail investors bid using UPI ASBA mandate blocks through standard broker apps.
+          </p>
+        </div>
+
+        <div class="glass-card p-5 rounded-2xl border-t-4 border-t-emerald-500 shadow-xs">
+          <span class="text-[11px] font-bold text-emerald-600 uppercase">Phase 4</span>
+          <h3 class="font-bold text-slate-900 text-sm mt-1 mb-2">Allotment & Listing (T+3)</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Under SEBI's T+3 framework, share allotment and unblocking occur within 2 business days, followed by listing and trading on the NSE and BSE by the 3rd business day.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Industry Trends & Sector Leadership (Interactive) -->
+    <section id="industries" class="glass-card p-6 md:p-8 rounded-3xl border border-slate-200 space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-indigo-600">Market Dynamics</span>
+          <h2 class="text-2xl font-extrabold text-slate-900">Which Industries Lead the IPO Wave?</h2>
+        </div>
+        <div id="industryTabs" class="inline-flex p-1 bg-slate-100 rounded-xl text-xs font-medium">
+          <button onclick="switchIndustry('tech', this)" class="ind-btn px-3 py-1.5 rounded-lg font-semibold bg-white text-indigo-600 shadow-xs transition">Fintech & Tech</button>
+          <button onclick="switchIndustry('energy', this)" class="ind-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-slate-900 transition">Renewable & EV</button>
+          <button onclick="switchIndustry('health', this)" class="ind-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-slate-900 transition">Pharma & Healthcare</button>
+          <button onclick="switchIndustry('consumer', this)" class="ind-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-slate-900 transition">Consumer & Retail</button>
+        </div>
+      </div>
+
+      <div id="industryDisplay" class="bg-gradient-to-r from-slate-900 to-indigo-950 text-white rounded-2xl p-6 transition-all duration-300">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- SECTION 4: Indian IPOs vs Foreign Cross-Border Listings -->
+    <section id="economic-impact" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      
+      <div class="glass-card p-6 md:p-8 rounded-3xl border border-slate-200 flex flex-col justify-between">
+        <div>
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold mb-3">
+            <i data-lucide="landmark" class="w-3.5 h-3.5"></i> Domestic Transformation
+          </div>
+          <h3 class="text-xl font-extrabold text-slate-900 mb-2">What Domestic IPOs Bring to India</h3>
+          <p class="text-xs md:text-sm text-slate-600 leading-relaxed mb-4">
+            A vibrant domestic primary market bridges domestic household savings directly with productive industrial and digital infrastructure:
+          </p>
+          <div class="space-y-2.5 text-xs">
+            <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
+              <span class="font-bold text-slate-900 block mb-0.5">Capital Deepening:</span>
+              <span class="text-slate-600">Channels retail Demat savings into institutional equity capital, reducing reliance on expensive debt.</span>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
+              <span class="font-bold text-slate-900 block mb-0.5">Wealth Democratization:</span>
+              <span class="text-slate-600">Enables retail participants to own shares in innovative enterprises at the early public growth stage.</span>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
+              <span class="font-bold text-slate-900 block mb-0.5">Corporate Governance Rigor:</span>
+              <span class="text-slate-600">SEBI listing obligations (LODR) enforce independent director oversight, quarterly earnings transparency, and audit scrutiny.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card p-6 md:p-8 rounded-3xl border border-slate-200 flex flex-col justify-between">
+        <div>
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-xs font-bold mb-3">
+            <i data-lucide="globe-2" class="w-3.5 h-3.5"></i> Global vs Domestic Route
+          </div>
+          <h3 class="text-xl font-extrabold text-slate-900 mb-2">Domestic Listing vs Listing Abroad</h3>
+          <p class="text-xs md:text-sm text-slate-600 leading-relaxed mb-4">
+            Historically, several technology unicorns incorporated offshore (flip structures) to target US/international listings. Today, India is reversing this trend:
+          </p>
+          <div class="space-y-2.5 text-xs">
+            <div class="p-3 rounded-xl bg-teal-50/60 border border-teal-100">
+              <span class="font-bold text-teal-900 block mb-0.5">Reverse Flipping to India:</span>
+              <span class="text-slate-600">Founders are relocating legal domiciles back to India due to deep domestic liquidity and favorable retail valuation appetite.</span>
+            </div>
+            <div class="p-3 rounded-xl bg-teal-50/60 border border-teal-100">
+              <span class="font-bold text-teal-900 block mb-0.5">Foreign Direct Investment (GIFT City):</span>
+              <span class="text-slate-600">India's IFSC GIFT City enables dual-listing mechanisms, allowing global capital to tap Indian growth under international financial regulation.</span>
+            </div>
+            <div class="p-3 rounded-xl bg-teal-50/60 border border-teal-100">
+              <span class="font-bold text-teal-900 block mb-0.5">Tax Base Retention:</span>
+              <span class="text-slate-600">Listing on domestic exchanges retains transaction fees, STT, and capital gains taxes inside the domestic treasury.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SECTION 5: How to Track Upcoming IPOs on NSE Website -->
+    <section id="tracker" class="glass-card p-6 md:p-8 rounded-3xl border border-slate-200 space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-indigo-600">Official Source of Truth</span>
+          <h2 class="text-2xl font-extrabold text-slate-900">How to Track Upcoming IPOs on NSE</h2>
+        </div>
+        <a href="https://www.nseindia.com/market-data/all-upcoming-issues-ipo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-indigo-50 text-indigo-600 text-xs font-bold hover:bg-indigo-100 transition">
+          <span>Open Official NSE Portal</span>
+          <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs">
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+          <div class="w-6 h-6 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold mb-2">1</div>
+          <span class="font-bold text-slate-900 block mb-1">Navigate to Market Data</span>
+          <p class="text-slate-600">Go to <code>nseindia.com</code>, hover over <strong>Market Data</strong> on the top navigation bar.</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+          <div class="w-6 h-6 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold mb-2">2</div>
+          <span class="font-bold text-slate-900 block mb-1">Select Public Issues</span>
+          <p class="text-slate-600">Under the primary market segment, click on <strong>"Public Issues"</strong> or <strong>"IPOs"</strong>.</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+          <div class="w-6 h-6 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold mb-2">3</div>
+          <span class="font-bold text-slate-900 block mb-1">Filter Current & Upcoming</span>
+          <p class="text-slate-600">Toggle between <em>"Issues Open"</em>, <em>"Forthcoming Issues"</em>, and <em>"Issues Closed"</em> to verify dates, price bands, and issue sizes.</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+          <div class="w-6 h-6 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold mb-2">4</div>
+          <span class="font-bold text-slate-900 block mb-1">Download Prospectus (RHP)</span>
+          <p class="text-slate-600">Click on the issue name to download the statutory Red Herring Prospectus (RHP) and view real-time subscription figures.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Hassle-Free IPO Application Guide (UPI / ASBA) -->
+    <section id="apply-guide" class="glass-card p-6 md:p-8 rounded-3xl border border-slate-200 space-y-6">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-wider text-indigo-600">Step-by-Step Procedure</span>
+        <h2 class="text-2xl font-extrabold text-slate-900">How to Apply for an IPO Hassle-Free</h2>
+        <p class="text-xs text-slate-500">Retail investors can bid up to ₹2,00,000 using standard UPI ASBA blocking.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+        <div class="p-5 rounded-2xl bg-indigo-50/50 border border-indigo-100 space-y-2">
+          <div class="flex items-center gap-2 text-indigo-700 font-bold">
+            <i data-lucide="smartphone" class="w-4 h-4"></i> Step 1: Place Bid via Broker
+          </div>
+          <p class="text-slate-600 leading-relaxed">
+            Open your stockbroker app during bidding hours (10:00 AM to 5:00 PM IST on open dates). Select the IPO, enter your bid lot quantity, select the <strong>Cut-Off Price</strong> (to maximize allocation probability), and enter your verified UPI ID.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-indigo-50/50 border border-indigo-100 space-y-2">
+          <div class="flex items-center gap-2 text-indigo-700 font-bold">
+            <i data-lucide="shield-check" class="w-4 h-4"></i> Step 2: Approve UPI Mandate
+          </div>
+          <p class="text-slate-600 leading-relaxed">
+            Open your linked UPI app (Google Pay, BHIM, PhonePe). Look for a pending <em>"Mandate / Autopay Request"</em> from the registrar/exchange. Enter your UPI PIN to approve the block. Funds do <strong>not</strong> leave your bank account—they are simply blocked (ASBA).
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-indigo-50/50 border border-indigo-100 space-y-2">
+          <div class="flex items-center gap-2 text-indigo-700 font-bold">
+            <i data-lucide="check-circle-2" class="w-4 h-4"></i> Step 3: Allotment or Unblock
+          </div>
+          <p class="text-slate-600 leading-relaxed">
+            If shares are allotted, the blocked funds are debited and shares are credited to your Demat account before the listing date. If no allotment is received due to oversubscription, the bank unblocks your entire capital automatically.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: When to Invest & The Investor Caution Checklist -->
+    <section id="caution-checklist" class="glass-card p-6 md:p-8 rounded-3xl border border-slate-200 space-y-6">
+      <div class="flex items-center gap-2">
+        <span class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-600 flex items-center justify-center font-extrabold">
+          <i data-lucide="alert-triangle" class="w-4 h-4"></i>
+        </span>
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Prudence & Caution</span>
+          <h2 class="text-2xl font-extrabold text-slate-900">When is the Right Time & What to Check</h2>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="space-y-3">
+          <h4 class="font-bold text-sm text-slate-900">Timing: When Should One Invest?</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Many investors participate purely for short-term listing gains driven by speculative Grey Market Premiums (GMP). However, sustainable value investing treats an IPO as an entry into an unproven public business.
+          </p>
+          <ul class="text-xs text-slate-600 space-y-2 list-disc pl-4">
+            <li><strong>Bull Market Frenzy Warning:</strong> IPOs cluster during euphoric bull markets when promoters can command peak valuations. Approach late-cycle IPOs with heightened discipline.</li>
+            <li><strong>Post-Listing Consolidation Alternative:</strong> If an IPO has rich valuations, prudent investors often wait for the mandatory anchor/promoter lock-in expiry (30 to 90 days) to see how the stock trades under market reality.</li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-bold text-sm text-slate-900">Pre-Investment Due Diligence Checklist</h4>
+          <div class="space-y-2 text-xs">
+            <div class="p-2.5 rounded-xl bg-amber-50/50 border border-amber-100 flex items-start gap-2">
+              <span class="font-bold text-amber-800">1. Issue Composition:</span>
+              <span class="text-slate-600">Is the majority of the issue Fresh Capital (for company growth) or pure OFS (existing backers exiting)?</span>
+            </div>
+            <div class="p-2.5 rounded-xl bg-amber-50/50 border border-amber-100 flex items-start gap-2">
+              <span class="font-bold text-amber-800">2. Valuation Multiple:</span>
+              <span class="text-slate-600">Compare the IPO's P/E (Price-to-Earnings) and P/B multiples against established listed industry peers.</span>
+            </div>
+            <div class="p-2.5 rounded-xl bg-amber-50/50 border border-amber-100 flex items-start gap-2">
+              <span class="font-bold text-amber-800">3. Corporate Governance & Litigation:</span>
+              <span class="text-slate-600">Read Chapter 5 of the RHP for pending criminal or statutory tax litigation against promoters.</span>
+            </div>
+            <div class="p-2.5 rounded-xl bg-amber-50/50 border border-amber-100 flex items-start gap-2">
+              <span class="font-bold text-amber-800">4. Cash Flow from Operations:</span>
+              <span class="text-slate-600">Verify whether stated accounting profits translate into real operational free cash flow.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: Interactive Instant Alert Simulator -->
+    <section class="bg-gradient-to-br from-indigo-900 via-slate-900 to-indigo-950 text-white p-6 md:p-8 rounded-3xl shadow-xl space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-teal-400">Real-Time Notification System</span>
+          <h2 class="text-2xl font-black">Stay Updated on Primary Market Issues</h2>
+        </div>
+        <span class="text-xs text-slate-400">Direct browser notification alert system</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+        <div class="space-y-3 bg-white/5 p-5 rounded-2xl border border-white/10 md:col-span-1">
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Test the real-time notification engine. When enabled, your browser triggers instant notifications whenever a new issue is listed on NSE/BSE.
+          </p>
+          <button id="alertTestBtn" onclick="triggerTestNotification()" class="w-full py-2.5 rounded-xl bg-indigo-500 hover:bg-indigo-400 text-white font-bold text-xs transition flex items-center justify-center gap-1.5 shadow-sm">
+            <i data-lucide="bell-ring" class="w-3.5 h-3.5"></i>
+            <span>Simulate Live IPO Notification</span>
+          </button>
+          <p id="alertStatus" class="text-[11px] text-teal-300 text-center font-medium"></p>
+        </div>
+
+        <!-- Live Feed Display -->
+        <div class="md:col-span-2 space-y-3">
+          <div class="flex items-center justify-between text-xs text-slate-300">
+            <span class="font-bold">Recent Primary Market Announcements</span>
+            <span class="text-[11px] text-slate-400">Exchange Verified</span>
+          </div>
+
+          <div class="space-y-2 text-xs">
+            <div class="p-3 rounded-xl bg-white/10 border border-white/10 flex items-center justify-between">
+              <div>
+                <span class="font-bold text-white block">TechCloud India Ltd. (Mainboard)</span>
+                <span class="text-slate-300 text-[11px]">Price Band: ₹450 - ₹475 | Lot: 31 Shares</span>
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 font-semibold text-[10px] border border-emerald-400/30">Issue Open</span>
+            </div>
+
+            <div class="p-3 rounded-xl bg-white/10 border border-white/10 flex items-center justify-between">
+              <div>
+                <span class="font-bold text-white block">GreenPower Renewables (Mainboard)</span>
+                <span class="text-slate-300 text-[11px]">Price Band: ₹210 - ₹225 | Lot: 66 Shares</span>
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-sky-500/20 text-sky-300 font-semibold text-[10px] border border-sky-400/30">Upcoming</span>
+            </div>
+
+            <div class="p-3 rounded-xl bg-white/10 border border-white/10 flex items-center justify-between">
+              <div>
+                <span class="font-bold text-white block">Apex BioPharma Diagnostics (SME)</span>
+                <span class="text-slate-300 text-[11px]">Price Band: ₹95 - ₹100 | Lot: 1200 Shares</span>
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-amber-500/20 text-amber-300 font-semibold text-[10px] border border-amber-400/30">Allotment Finalized</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Regulatory Compliance Footer -->
+  <footer class="border-t border-slate-200 py-8 px-4 max-w-6xl mx-auto text-xs text-slate-500 space-y-3">
+    <p class="font-bold text-slate-700 uppercase tracking-wider text-[11px]">Educational Disclosure & Risk Warnings</p>
+    <p class="leading-relaxed">
+      <strong>Disclaimer:</strong> For educational and illustrative purposes only. Not financial advice or a recommendation to buy or sell securities. Mutual Fund, IPO, and equity investments are subject to market risks; read all scheme-related documents carefully. Actual returns depend on market conditions, company performance, valuations, and economic cycles.
+    </p>
+    <p class="text-[11px] text-slate-400 pt-2 border-t border-slate-200">
+      © 2026 Primary Markets Educational Guide. Not a SEBI-registered advisory entity.
+    </p>
+  </footer>
+
+  <script>
+    // Initialize Lucide Icons
+    try { lucide.createIcons(); } catch (e) { console.warn(e); }
+
+    // Industry Trends Data
+    const industryData = {
+      tech: {
+        title: "Fintech, SaaS & Consumer Tech",
+        badge: "High Valuation Multiple Focus",
+        desc: "New-age technology companies tapping public markets to provide exits to early venture capital backers and establish liquidity.",
+        points: ["Key Focus: Path to profitability and EBITDA margins", "Challenges: High initial P/S multiples, market volatility post lock-in", "Recent Trend: Focus shifted from pure revenue growth to cash flows"]
+      },
+      energy: {
+        title: "Renewable Energy, Green Hydrogen & EVs",
+        badge: "Capital Expenditure Driven",
+        desc: "Infrastructure companies raising capital to finance large-scale solar arrays, wind capacity, battery manufacturing, and grid integration.",
+        points: ["Key Focus: Long-term Power Purchase Agreements (PPAs)", "Challenges: Regulatory tariff revisions, high leverage", "Recent Trend: Strong institutional participation (QIB)"]
+      },
+      health: {
+        title: "Pharmaceuticals, Diagnostics & Healthcare",
+        badge: "Defensive Growth Segment",
+        desc: "Hospital networks, API manufacturers, and specialized diagnostic chains expanding regional operations and R&D pipelines.",
+        points: ["Key Focus: Average Revenue Per Occupied Bed (ARPOB) and ANDA approvals", "Challenges: US FDA compliance audits, pricing caps", "Recent Trend: High margin stability and domestic institutional interest"]
+      },
+      consumer: {
+        title: "Consumer Retail, QSR & FMCG",
+        badge: "Domestic Consumption Proxy",
+        desc: "Direct-to-consumer brands, quick-service restaurant chains, and retail networks capturing India's expanding urban discretionary spending.",
+        points: ["Key Focus: Same-Store Sales Growth (SSSG) and customer acquisition cost", "Challenges: Food inflation, aggressive quick-commerce competition", "Recent Trend: Predictable cash flows attracting retail interest"]
+      }
+    };
+
+    function switchIndustry(key, btnEl) {
+      const data = industryData[key];
+      const container = document.getElementById('industryDisplay');
+
+      document.querySelectorAll('.ind-btn').forEach(btn => {
+        btn.classList.remove('bg-white', 'text-indigo-600', 'font-semibold', 'shadow-xs');
+        btn.classList.add('text-slate-600');
+      });
+      if (btnEl) {
+        btnEl.classList.add('bg-white', 'text-indigo-600', 'font-semibold', 'shadow-xs');
+        btnEl.classList.remove('text-slate-600');
+      }
+
+      container.innerHTML = `
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-3">
+          <h3 class="text-xl font-bold text-white tracking-tight">${data.title}</h3>
+          <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/20 text-indigo-300 border border-indigo-400/30 w-fit">${data.badge}</span>
+        </div>
+        <p class="text-slate-300 text-xs md:text-sm leading-relaxed mb-4">${data.desc}</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+          ${data.points.map(p => `
+            <div class="bg-white/10 p-2.5 rounded-xl border border-white/10 text-xs text-slate-200 flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0"></span>
+              <span>${p}</span>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    // Default industry render
+    switchIndustry('tech', document.querySelector('.ind-btn'));
+
+    // Notification Alert Simulation
+    function requestAlertPermission() {
+      if (!("Notification" in window)) {
+        alert("This browser does not support desktop notifications.");
+        return;
+      }
+      Notification.requestPermission().then(permission => {
+        const statusEl = document.getElementById('alertStatus');
+        if (permission === "granted") {
+          statusEl.innerText = "✓ Browser alerts enabled for new IPO releases!";
+          new Notification("IPO Alerts Activated", {
+            body: "You will now receive notifications when new IPOs file their RHP.",
+            icon: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Globe.png"
+          });
+        } else {
+          statusEl.innerText = "Notification permissions denied by user.";
+        }
+      });
+    }
+
+    function triggerTestNotification() {
+      if (!("Notification" in window)) {
+        alert("Desktop notifications are not supported in your browser.");
+        return;
+      }
+      if (Notification.permission === "granted") {
+        new Notification("New IPO Alert: TechCloud India", {
+          body: "Bidding opens today! Price band ₹450-475. Minimum lot size: 31 shares.",
+        });
+      } else {
+        Notification.requestPermission().then(permission => {
+          if (permission === "granted") {
+            triggerTestNotification();
+          } else {
+            alert("Please allow notification permissions in your browser bar to receive alerts.");
+          }
+        });
+      }
+    }
+  </script>
+</body>
+</html>
